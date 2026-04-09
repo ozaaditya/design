@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin · Catalog — Traditiontag</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif;background:#FAF6EF;color:#1A1310;}
+h1,h2,h3,.serif{font-family:'Fraunces',serif;}
+.mono{font-family:'JetBrains Mono',monospace;}
+.pattern-border{background-image:repeating-linear-gradient(90deg,#B4471F 0 8px,transparent 8px 16px);height:3px;}
+</style>
+</head>
+<body>
+
+<header class="bg-[#1A1310] text-[#FAF6EF]">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-8">
+      <a href="homepage.html" class="serif text-xl">traditiontag<span class="text-[#B4471F]">.</span> <span class="text-xs text-[#FAF6EF]/40 ml-1">ADMIN</span></a>
+      <nav class="flex gap-5 text-xs uppercase tracking-wider">
+        <a href="admin-catalog.html" class="text-[#E08821]">Catalog</a>
+        <a href="admin-orders.html" class="text-[#FAF6EF]/70 hover:text-[#FAF6EF]">Orders</a>
+        <a href="admin-ai-costs.html" class="text-[#FAF6EF]/70 hover:text-[#FAF6EF]">AI Costs</a>
+        <a href="#" class="text-[#FAF6EF]/70 hover:text-[#FAF6EF]">Analytics</a>
+      </nav>
+    </div>
+    <div class="text-xs text-[#FAF6EF]/60">admin@traditiontag.in</div>
+  </div>
+  <div class="pattern-border"></div>
+</header>
+
+<section class="max-w-7xl mx-auto px-6 py-10">
+  <div class="flex items-end justify-between mb-2">
+    <div><p class="text-xs tracking-widest text-[#B4471F]">GIT-BACKED CATALOG</p><h1 class="serif text-4xl">Catalog versions</h1></div>
+    <div class="flex gap-2">
+      <button class="border border-[#1A1310]/30 px-4 py-2 text-xs">Pull from git-catalog</button>
+      <button class="bg-[#1A1310] text-[#FAF6EF] px-5 py-2 text-xs tracking-wide hover:bg-[#B4471F]">+ NEW VERSION</button>
+    </div>
+  </div>
+  <p class="text-sm text-[#1A1310]/70 mb-8 max-w-2xl">Every product change is a git tag. Publish a tag to push it live; rollback to any previous tag in one click.</p>
+
+  <!-- Live banner -->
+  <div class="border border-[#5C6B3E]/40 bg-[#5C6B3E]/10 p-5 mb-8 flex items-center justify-between">
+    <div>
+      <span class="bg-[#5C6B3E] text-[#FAF6EF] px-2 py-0.5 text-[10px] uppercase tracking-wide">LIVE</span>
+      <span class="serif text-lg ml-3">v2026.04.07-spring</span>
+      <p class="text-xs text-[#1A1310]/60 mt-1 mono">commit a4f1c93 · pushed by anjali@traditiontag.in · 7 Apr 2026, 14:22 IST</p>
+    </div>
+    <div class="text-sm text-[#1A1310]/70">450 products · 28 states · 12 categories</div>
+  </div>
+
+  <h3 class="serif text-xl mb-4">Version history</h3>
+  <div class="border border-[#F0E6D2]">
+    <table class="w-full text-sm">
+      <thead class="bg-[#F0E6D2]/40 text-xs uppercase tracking-wide text-[#1A1310]/60">
+        <tr><th class="text-left p-3">Tag</th><th class="text-left p-3">Commit</th><th class="text-left p-3">Author</th><th class="text-left p-3">Date</th><th class="text-left p-3">Changes</th><th class="text-left p-3">Status</th><th></th></tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-[#F0E6D2]">
+          <td class="p-3 serif">v2026.04.07-spring</td>
+          <td class="p-3 mono text-xs text-[#1A1310]/60">a4f1c93</td>
+          <td class="p-3">anjali</td>
+          <td class="p-3 text-[#1A1310]/60">7 Apr</td>
+          <td class="p-3 text-xs"><span class="text-[#5C6B3E]">+12</span> <span class="text-[#B4471F]">−3</span> products</td>
+          <td class="p-3"><span class="bg-[#5C6B3E] text-[#FAF6EF] px-2 py-0.5 text-[10px]">LIVE</span></td>
+          <td class="p-3 text-right"><button class="text-xs underline">Diff</button></td>
+        </tr>
+        <tr class="border-t border-[#F0E6D2]">
+          <td class="p-3 serif">v2026.04.02</td>
+          <td class="p-3 mono text-xs text-[#1A1310]/60">7e8d201</td>
+          <td class="p-3">rajesh</td>
+          <td class="p-3 text-[#1A1310]/60">2 Apr</td>
+          <td class="p-3 text-xs"><span class="text-[#5C6B3E]">+5</span> <span class="text-[#B4471F]">−1</span></td>
+          <td class="p-3"><span class="bg-[#1A1310]/10 px-2 py-0.5 text-[10px]">ARCHIVED</span></td>
+          <td class="p-3 text-right"><button class="text-xs underline">Rollback</button> · <button class="text-xs underline">Diff</button></td>
+        </tr>
+        <tr class="border-t border-[#F0E6D2]">
+          <td class="p-3 serif">v2026.03.28-republic</td>
+          <td class="p-3 mono text-xs text-[#1A1310]/60">f3a8b41</td>
+          <td class="p-3">anjali</td>
+          <td class="p-3 text-[#1A1310]/60">28 Mar</td>
+          <td class="p-3 text-xs"><span class="text-[#5C6B3E]">+34</span> <span class="text-[#B4471F]">−0</span></td>
+          <td class="p-3"><span class="bg-[#1A1310]/10 px-2 py-0.5 text-[10px]">ARCHIVED</span></td>
+          <td class="p-3 text-right"><button class="text-xs underline">Rollback</button> · <button class="text-xs underline">Diff</button></td>
+        </tr>
+        <tr class="border-t border-[#F0E6D2] bg-[#E08821]/10">
+          <td class="p-3 serif">v2026.04.09-draft</td>
+          <td class="p-3 mono text-xs text-[#1A1310]/60">b219ee0</td>
+          <td class="p-3">anjali</td>
+          <td class="p-3 text-[#1A1310]/60">today</td>
+          <td class="p-3 text-xs"><span class="text-[#5C6B3E]">+8</span> <span class="text-[#B4471F]">−2</span></td>
+          <td class="p-3"><span class="bg-[#E08821] text-[#1A1310] px-2 py-0.5 text-[10px]">DRAFT</span></td>
+          <td class="p-3 text-right"><button class="text-xs underline">Preview</button> · <button class="text-xs font-semibold text-[#B4471F]">Publish →</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="serif text-xl mb-4 mt-12">Pending changes (draft)</h3>
+  <div class="border border-[#F0E6D2] divide-y divide-[#F0E6D2] text-sm">
+    <div class="p-4 flex justify-between"><div><span class="text-[#5C6B3E] font-semibold">+ ADD</span> Meenakari Enamel Bangles <span class="text-xs text-[#1A1310]/50 mono">products/jewellery/meenakari-bangles.json</span></div><div class="text-xs text-[#1A1310]/60">+ image, + 3D model</div></div>
+    <div class="p-4 flex justify-between"><div><span class="text-[#E08821] font-semibold">~ EDIT</span> Banarasi Katan Silk Saree <span class="text-xs text-[#1A1310]/50 mono">products/handlooms/banarasi-katan.json</span></div><div class="text-xs text-[#1A1310]/60">price: ₹22,000 → ₹18,500</div></div>
+    <div class="p-4 flex justify-between"><div><span class="text-[#B4471F] font-semibold">− REMOVE</span> Bastar Iron Horse <span class="text-xs text-[#1A1310]/50 mono">products/handicrafts/bastar-iron-horse.json</span></div><div class="text-xs text-[#1A1310]/60">discontinued by cluster</div></div>
+  </div>
+</section>
+</body></html>

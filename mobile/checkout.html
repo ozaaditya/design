@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=375, initial-scale=1.0">
+<title>Checkout — Mobile — Traditiontag</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif;background:#E0D6C8;margin:0;display:flex;justify-content:center;padding:40px 0;}
+.phone{width:375px;min-height:812px;background:#FAF6EF;color:#1A1310;border-radius:40px;overflow:hidden;box-shadow:0 25px 60px rgba(0,0,0,.25);position:relative;border:8px solid #1A1310;}
+.serif{font-family:'Fraunces',serif;}
+.input{width:100%;border:1px solid rgba(26,19,16,.2);border-radius:8px;background:#FAF6EF;padding:.6rem .75rem;font-size:12px;}
+.input:focus{outline:none;border-color:#1A1310;}
+</style>
+</head>
+<body>
+
+<div class="phone">
+  <div class="flex justify-between items-center px-6 pt-4 pb-2 text-[10px] text-[#1A1310]/60"><span>9:41</span><div class="flex gap-1"><span>📶</span><span>🔋</span></div></div>
+
+  <div class="px-5 pb-2 flex items-center justify-between">
+    <a href="cart.html" class="text-sm">← Cart</a>
+    <span class="serif text-lg">Checkout</span>
+    <span class="text-[10px]">🔒</span>
+  </div>
+
+  <!-- Steps -->
+  <div class="flex items-center gap-2 px-5 mb-4 text-[10px]">
+    <span class="w-5 h-5 rounded-full bg-[#1A1310] text-[#FAF6EF] flex items-center justify-center text-[9px]">1</span><span class="font-medium">Address</span>
+    <span class="flex-1 border-t border-[#1A1310]/20"></span>
+    <span class="w-5 h-5 rounded-full border border-[#1A1310]/30 flex items-center justify-center text-[9px]">2</span><span class="text-[#1A1310]/40">Payment</span>
+    <span class="flex-1 border-t border-[#1A1310]/20"></span>
+    <span class="w-5 h-5 rounded-full border border-[#1A1310]/30 flex items-center justify-center text-[9px]">3</span><span class="text-[#1A1310]/40">Confirm</span>
+  </div>
+
+  <div class="px-5">
+    <!-- Saved address -->
+    <p class="text-[10px] uppercase tracking-widest text-[#1A1310]/50 mb-2">SHIPPING ADDRESS</p>
+    <label class="border border-[#1A1310] rounded-lg p-3 mb-2 flex gap-3 items-start block">
+      <input type="radio" name="addr" checked class="mt-1">
+      <div>
+        <p class="text-xs font-medium">Home — Priya Sharma</p>
+        <p class="text-[10px] text-[#1A1310]/60">14 Lodhi Road, Apt 3B, New Delhi 110003</p>
+        <p class="text-[10px] text-[#1A1310]/60">+91 98765 43210</p>
+      </div>
+    </label>
+    <label class="border border-[#F0E6D2] rounded-lg p-3 mb-2 flex gap-3 items-start block">
+      <input type="radio" name="addr" class="mt-1">
+      <div>
+        <p class="text-xs font-medium">Office — Priya Sharma</p>
+        <p class="text-[10px] text-[#1A1310]/60">DLF Cyber City, Tower 9, Gurugram 122002</p>
+      </div>
+    </label>
+    <button class="text-xs text-[#B4471F] underline mb-5">+ Add new address</button>
+
+    <!-- Shipping -->
+    <p class="text-[10px] uppercase tracking-widest text-[#1A1310]/50 mb-2">SHIPPING METHOD</p>
+    <label class="border border-[#1A1310] rounded-lg p-3 mb-2 flex justify-between items-center block">
+      <span class="flex items-center gap-2"><input type="radio" name="ship" checked> <span class="text-xs">Standard · 3–5 days</span></span>
+      <span class="text-xs text-[#5C6B3E] font-medium">FREE</span>
+    </label>
+    <label class="border border-[#F0E6D2] rounded-lg p-3 mb-5 flex justify-between items-center block">
+      <span class="flex items-center gap-2"><input type="radio" name="ship"> <span class="text-xs">Express · 1–2 days</span></span>
+      <span class="text-xs">₹450</span>
+    </label>
+
+    <!-- Payment -->
+    <p class="text-[10px] uppercase tracking-widest text-[#1A1310]/50 mb-2">PAYMENT</p>
+    <div class="border border-[#F0E6D2] rounded-lg p-4 bg-[#F0E6D2]/20 mb-4">
+      <p class="text-[9px] text-[#1A1310]/50 mb-3 flex items-center gap-1">🔒 Stripe secure</p>
+      <input class="input mb-2" placeholder="Card number">
+      <div class="grid grid-cols-2 gap-2">
+        <input class="input" placeholder="MM / YY">
+        <input class="input" placeholder="CVC">
+      </div>
+
+      <div class="flex gap-2 mt-3">
+        <button class="flex-1 border border-[#1A1310]/20 rounded py-2 text-[10px]">Google Pay</button>
+        <button class="flex-1 border border-[#1A1310]/20 rounded py-2 text-[10px]">UPI</button>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="bg-[#F0E6D2]/30 border border-[#F0E6D2] rounded-lg p-3 mb-4">
+      <div class="flex justify-between text-xs"><span>2 items</span><span>₹34,700</span></div>
+      <div class="flex justify-between text-xs"><span>Shipping</span><span class="text-[#5C6B3E]">FREE</span></div>
+      <div class="flex justify-between text-xs"><span>GST</span><span>₹1,735</span></div>
+      <div class="border-t border-[#1A1310]/15 mt-2 pt-2 flex justify-between"><span class="serif text-base">Total</span><span class="serif text-base">₹36,435</span></div>
+    </div>
+
+    <button class="w-full bg-[#1A1310] text-[#FAF6EF] py-3.5 text-sm font-medium rounded-lg mb-2">PLACE ORDER · ₹36,435</button>
+    <p class="text-[9px] text-[#1A1310]/40 text-center mb-8">By placing this order you agree to our Terms. All products carry GI certificates.</p>
+  </div>
+</div>
+
+</body></html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile — Traditiontag</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif;background:#FAF6EF;color:#1A1310;}
+h1,h2,h3,.serif{font-family:'Fraunces',serif;}
+.pattern-border{background-image:repeating-linear-gradient(90deg,#B4471F 0 8px,transparent 8px 16px);height:3px;}
+.input{width:100%;border:1px solid rgba(26,19,16,.2);background:#FAF6EF;padding:.65rem .85rem;font-size:.875rem;}
+.input:focus{outline:none;border-color:#1A1310;}
+</style>
+</head>
+<body>
+
+<header class="border-b border-[#F0E6D2] bg-[#FAF6EF]">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="homepage.html" class="serif text-2xl font-semibold">traditiontag<span class="text-[#B4471F]">.</span></a>
+    <nav class="hidden md:flex gap-7 text-sm font-medium"><a href="category.html?cat=handlooms">Handlooms</a><a href="category.html?cat=handicrafts">Handicrafts</a><a href="category.html?cat=jewellery">Jewellery</a><a href="category.html?cat=home">Home &amp; Living</a></nav>
+    <div class="flex items-center gap-5"><a href="category.html" class="hover:text-[#B4471F]"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a> <a href="account-orders.html" class="hover:text-[#B4471F]"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></a> <a href="account-wishlist.html" class="hover:text-[#B4471F]"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a5.5 5.5 0 0 0-7.8 0L12 6.6l-1-1a5.5 5.5 0 1 0-7.8 7.8L12 22l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg></a> <a href="cart.html" class="relative hover:text-[#B4471F]"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l-1.5 11a2 2 0 0 1-2 1.7H8.5a2 2 0 0 1-2-1.7L5 7z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg><span class="absolute -top-2 -right-2 bg-[#B4471F] text-[#FAF6EF] text-[9px] rounded-full w-4 h-4 flex items-center justify-center">2</span></a></div>
+  </div>
+  <div class="pattern-border"></div>
+</header>
+
+<section class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-12 gap-10">
+  <aside class="col-span-12 md:col-span-3">
+    <div class="mb-6"><p class="text-xs text-[#1A1310]/50 uppercase tracking-wide">Account</p><h2 class="serif text-2xl">Priya Sharma</h2><p class="text-xs text-[#1A1310]/60">priya@example.com</p></div>
+    <nav class="space-y-1 text-sm border-l border-[#F0E6D2]">
+      <a href="account-orders.html" class="block px-4 py-2 hover:text-[#B4471F]">Orders</a>
+      <a href="account-wishlist.html" class="block px-4 py-2 hover:text-[#B4471F]">Wishlist</a>
+      <a href="account-ar-sessions.html" class="block px-4 py-2 hover:text-[#B4471F]">AR Sessions</a>
+      <a href="account-renders.html" class="block px-4 py-2 hover:text-[#B4471F]">AI Room Renders</a>
+      <a href="account-profile.html" class="block px-4 py-2 border-l-2 border-[#B4471F] -ml-px font-semibold text-[#B4471F]">Profile &amp; Addresses</a>
+      <a href="#" class="block px-4 py-2 text-[#1A1310]/50">Sign out</a>
+    </nav>
+  </aside>
+
+  <div class="col-span-12 md:col-span-9 space-y-12">
+
+    <!-- Profile -->
+    <div>
+      <p class="text-xs tracking-widest text-[#B4471F]">YOUR DETAILS</p>
+      <h1 class="serif text-4xl mb-6">Profile</h1>
+
+      <div class="border border-[#F0E6D2] p-6 bg-[#F0E6D2]/20">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div><label class="text-xs uppercase tracking-wide text-[#1A1310]/60 block mb-1">First name</label><input class="input" value="Priya"></div>
+          <div><label class="text-xs uppercase tracking-wide text-[#1A1310]/60 block mb-1">Last name</label><input class="input" value="Sharma"></div>
+          <div><label class="text-xs uppercase tracking-wide text-[#1A1310]/60 block mb-1">Email</label><input class="input" value="priya@example.com"></div>
+          <div><label class="text-xs uppercase tracking-wide text-[#1A1310]/60 block mb-1">Phone</label><input class="input" value="+91 98765 43210"></div>
+          <div><label class="text-xs uppercase tracking-wide text-[#1A1310]/60 block mb-1">Date of birth</label><input class="input" type="date" value="1990-06-14"></div>
+          <div><label class="text-xs uppercase tracking-wide text-[#1A1310]/60 block mb-1">Preferred language</label><select class="input"><option>English</option><option>हिन्दी</option><option>தமிழ்</option></select></div>
+        </div>
+        <div class="flex gap-3 mt-6">
+          <button class="bg-[#1A1310] text-[#FAF6EF] px-6 py-2.5 text-xs tracking-wide hover:bg-[#B4471F]">SAVE CHANGES</button>
+          <button class="border border-[#1A1310]/30 px-6 py-2.5 text-xs">Change password</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Addresses -->
+    <div>
+      <div class="flex items-end justify-between mb-6">
+        <div><p class="text-xs tracking-widest text-[#B4471F]">WHERE TO SHIP</p><h2 class="serif text-3xl">Saved addresses</h2></div>
+        <button class="border border-[#1A1310] px-5 py-2.5 text-xs tracking-wide hover:bg-[#1A1310] hover:text-[#FAF6EF]">+ ADD ADDRESS</button>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-5">
+        <!-- Default address -->
+        <div class="border border-[#1A1310] p-5 relative">
+          <span class="absolute top-3 right-3 bg-[#5C6B3E] text-[#FAF6EF] px-2 py-0.5 text-[10px] uppercase tracking-wide">Default</span>
+          <p class="text-xs text-[#1A1310]/50 uppercase tracking-wide mb-1">Home</p>
+          <p class="serif text-base">Priya Sharma</p>
+          <p class="text-sm text-[#1A1310]/70 mt-1 leading-relaxed">14 Lodhi Road, Apartment 3B<br>New Delhi, Delhi 110003<br>India<br>+91 98765 43210</p>
+          <div class="flex gap-4 mt-4 text-xs">
+            <button class="underline hover:text-[#B4471F]">Edit</button>
+            <button class="underline hover:text-[#B4471F]">Delete</button>
+          </div>
+        </div>
+
+        <!-- Second address -->
+        <div class="border border-[#F0E6D2] p-5 relative">
+          <p class="text-xs text-[#1A1310]/50 uppercase tracking-wide mb-1">Office</p>
+          <p class="serif text-base">Priya Sharma</p>
+          <p class="text-sm text-[#1A1310]/70 mt-1 leading-relaxed">DLF Cyber City, Tower 9, Floor 14<br>Gurugram, Haryana 122002<br>India<br>+91 98765 43210</p>
+          <div class="flex gap-4 mt-4 text-xs">
+            <button class="underline hover:text-[#B4471F]">Edit</button>
+            <button class="underline hover:text-[#B4471F]">Set as default</button>
+            <button class="underline hover:text-[#B4471F]">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Preferences -->
+    <div>
+      <p class="text-xs tracking-widest text-[#B4471F]">COMMUNICATIONS</p>
+      <h2 class="serif text-3xl mb-6">Preferences</h2>
+      <div class="border border-[#F0E6D2] divide-y divide-[#F0E6D2]">
+        <label class="flex items-center justify-between p-5 cursor-pointer">
+          <div><p class="serif text-base">Monthly letter</p><p class="text-xs text-[#1A1310]/60 mt-1">New collections, artisan stories, early access</p></div>
+          <input type="checkbox" checked class="w-5 h-5">
+        </label>
+        <label class="flex items-center justify-between p-5 cursor-pointer">
+          <div><p class="serif text-base">Order updates</p><p class="text-xs text-[#1A1310]/60 mt-1">Shipping, delivery, return confirmations</p></div>
+          <input type="checkbox" checked class="w-5 h-5">
+        </label>
+        <label class="flex items-center justify-between p-5 cursor-pointer">
+          <div><p class="serif text-base">Festive offers</p><p class="text-xs text-[#1A1310]/60 mt-1">Diwali, Pongal, Eid seasonal collections</p></div>
+          <input type="checkbox" class="w-5 h-5">
+        </label>
+      </div>
+    </div>
+
+    <!-- Danger zone -->
+    <div class="border border-[#B4471F]/30 p-5 bg-[#B4471F]/5">
+      <h3 class="serif text-lg">Delete account</h3>
+      <p class="text-xs text-[#1A1310]/60 mt-1">Your orders, AR sessions, and AI renders will be permanently removed.</p>
+      <button class="mt-3 text-xs text-[#B4471F] underline">Request deletion</button>
+    </div>
+
+  </div>
+</section>
+
+<footer class="bg-[#1A1310] text-[#FAF6EF]/70 py-10 text-center text-xs">© 2026 Traditiontag</footer>
+</body></html>

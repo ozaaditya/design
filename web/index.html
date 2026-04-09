@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mockups Index — Traditiontag</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif;background:#FAF6EF;color:#1A1310;}
+h1,h2,h3,.serif{font-family:'Fraunces',serif;}
+.pattern-border{background-image:repeating-linear-gradient(90deg,#B4471F 0 8px,transparent 8px 16px);height:3px;}
+a.card{display:block;padding:1.25rem;border:1px solid #F0E6D2;background:#FAF6EF;transition:all .15s;}
+a.card:hover{border-color:#1A1310;background:#F0E6D2/30;transform:translateY(-2px);}
+</style>
+</head>
+<body>
+
+<header class="border-b border-[#F0E6D2]">
+  <div class="max-w-5xl mx-auto px-6 py-6 flex items-center justify-between">
+    <span class="serif text-2xl">traditiontag<span class="text-[#B4471F]">.</span> <span class="text-xs text-[#1A1310]/40 ml-2">MOCKUPS</span></span>
+    <span class="text-xs text-[#1A1310]/60">Design reference for frontend engineers</span>
+  </div>
+  <div class="pattern-border"></div>
+</header>
+
+<section class="max-w-5xl mx-auto px-6 py-12">
+  <p class="text-xs tracking-widest text-[#B4471F] mb-2">DESIGN MOCKUPS</p>
+  <h1 class="serif text-5xl mb-4">All screens</h1>
+  <p class="text-[#1A1310]/70 max-w-2xl mb-10">Self-contained HTML mockups for every screen in the Next.js web app. Built with Tailwind CDN + Fraunces/Inter. Use these as visual reference when building the real React components.</p>
+
+  <h2 class="serif text-2xl mb-4">Storefront</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+    <a href="homepage.html" class="card"><div class="text-xs text-[#1A1310]/50 uppercase tracking-wide">/</div><div class="serif text-lg">Homepage</div><div class="text-xs text-[#1A1310]/60">Hero, categories, featured products, AR feature, region grid, artisan story</div></a>
+    <a href="category.html" class="card"><div class="text-xs text-[#1A1310]/50 uppercase tracking-wide">/products</div><div class="serif text-lg">Category / Catalog</div><div class="text-xs text-[#1A1310]/60">Faceted filters (region, material, price, features), product grid, pagination</div></a>
+    <a href="product-detail.html" class="card"><div class="text-xs text-[#1A1310]/50 uppercase tracking-wide">/products/[slug]</div><div class="serif text-lg">Product Detail</div><div class="text-xs text-[#1A1310]/60">Gallery, variants, AR / AI buttons, artisan card, specs, related</div></a>
+    <a href="cart.html" class="card"><div class="text-xs text-[#1A1310]/50 uppercase tracking-wide">/cart</div><div class="serif text-lg">Cart</div><div class="text-xs text-[#1A1310]/60">Line items, quantity, promo code, order summary, artisan share</div></a>
+    <a href="checkout.html" class="card"><div class="text-xs text-[#1A1310]/50 uppercase tracking-wide">/checkout</div><div class="serif text-lg">Checkout</div><div class="text-xs text-[#1A1310]/60">Contact, shipping, Stripe Elements payment, order summary</div></a>
+  </div>
+
+  <h2 class="serif text-2xl mb-4">Account</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+    <a href="account-orders.html" class="card"><div class="text-xs text-[#1A1310]/50 uppercase tracking-wide">/account/orders</div><div class="serif text-lg">Orders</div><div class="text-xs text-[#1A1310]/60">Order history with status badges, tracking, review prompts</div></a>
+    <a href="account-wishlist.html" class="card"><div class="text-xs text-[#1A1310]/50 uppercase tracking-wide">/account/wishlist</div><div class="serif text-lg">Wishlist</div><div class="text-xs text-[#1A1310]/60">Saved products grid with quick add-to-cart</div></a>
+    <a href="account-ar-sessions.html" class="card"><div class="text-xs text-[#1A1310]/50 uppercase tracking-wide">/account/ar-sessions</div><div class="serif text-lg">AR Sessions</div><div class="text-xs text-[#1A1310]/60">Saved AR snapshots, relaunch / share / buy</div></a>
+    <a href="account-renders.html" class="card"><div class="text-xs text-[#1A1310]/50 uppercase tracking-wide">/account/renders</div><div class="serif text-lg">AI Room Renders</div><div class="text-xs text-[#1A1310]/60">AI-generated room visualizations with render queue, credits</div></a>
+    <a href="account-profile.html" class="card"><div class="text-xs text-[#1A1310]/50 uppercase tracking-wide">/account/profile</div><div class="serif text-lg">Profile &amp; Addresses</div><div class="text-xs text-[#1A1310]/60">Personal details, saved addresses, communication preferences</div></a>
+  </div>
+
+  <h2 class="serif text-2xl mb-4">Admin</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+    <a href="admin-catalog.html" class="card"><div class="text-xs text-[#1A1310]/50 uppercase tracking-wide">/admin/catalog</div><div class="serif text-lg">Catalog Versions</div><div class="text-xs text-[#1A1310]/60">Git-tag-backed catalog, publish/rollback, pending diff view</div></a>
+    <a href="admin-orders.html" class="card"><div class="text-xs text-[#1A1310]/50 uppercase tracking-wide">/admin/orders</div><div class="serif text-lg">Order Management</div><div class="text-xs text-[#1A1310]/60">KPIs, searchable table, status filters, CSV export</div></a>
+    <a href="admin-ai-costs.html" class="card"><div class="text-xs text-[#1A1310]/50 uppercase tracking-wide">/admin/ai-costs</div><div class="serif text-lg">AI Cost Dashboard</div><div class="text-xs text-[#1A1310]/60">Budget tracking, daily spend chart, by-model breakdown, top users</div></a>
+  </div>
+
+  <div class="border-t border-[#F0E6D2] pt-6 text-xs text-[#1A1310]/60">
+    <p class="serif text-base text-[#1A1310]">Design system</p>
+    <p class="mt-2">Fonts: Fraunces (serif headings), Inter (sans body) · JetBrains Mono (admin data)</p>
+    <p>Colors: ink #1A1310 · cream #FAF6EF · sand #F0E6D2 · terracotta #B4471F · saffron #E08821 · moss #5C6B3E</p>
+    <p>Imagery: keyword-matched via loremflickr — replace with real MinIO assets in production</p>
+  </div>
+</section>
+
+</body></html>

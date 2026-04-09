@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin · Orders — Traditiontag</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif;background:#FAF6EF;color:#1A1310;}
+h1,h2,h3,.serif{font-family:'Fraunces',serif;}
+.mono{font-family:'JetBrains Mono',monospace;}
+.pattern-border{background-image:repeating-linear-gradient(90deg,#B4471F 0 8px,transparent 8px 16px);height:3px;}
+</style>
+</head>
+<body>
+
+<header class="bg-[#1A1310] text-[#FAF6EF]">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-8">
+      <a href="homepage.html" class="serif text-xl">traditiontag<span class="text-[#B4471F]">.</span> <span class="text-xs text-[#FAF6EF]/40 ml-1">ADMIN</span></a>
+      <nav class="flex gap-5 text-xs uppercase tracking-wider">
+        <a href="admin-catalog.html" class="text-[#FAF6EF]/70 hover:text-[#FAF6EF]">Catalog</a>
+        <a href="admin-orders.html" class="text-[#E08821]">Orders</a>
+        <a href="admin-ai-costs.html" class="text-[#FAF6EF]/70 hover:text-[#FAF6EF]">AI Costs</a>
+        <a href="#" class="text-[#FAF6EF]/70 hover:text-[#FAF6EF]">Analytics</a>
+      </nav>
+    </div>
+    <div class="text-xs text-[#FAF6EF]/60">admin@traditiontag.in</div>
+  </div>
+  <div class="pattern-border"></div>
+</header>
+
+<section class="max-w-7xl mx-auto px-6 py-10">
+  <p class="text-xs tracking-widest text-[#B4471F]">FULFILMENT</p>
+  <h1 class="serif text-4xl mb-6">Orders</h1>
+
+  <!-- KPIs -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+    <div class="border border-[#F0E6D2] p-4"><p class="text-xs text-[#1A1310]/60">Today</p><p class="serif text-3xl">42</p><p class="text-[10px] text-[#5C6B3E]">+12% vs avg</p></div>
+    <div class="border border-[#F0E6D2] p-4"><p class="text-xs text-[#1A1310]/60">In transit</p><p class="serif text-3xl">128</p></div>
+    <div class="border border-[#F0E6D2] p-4"><p class="text-xs text-[#1A1310]/60">Pending action</p><p class="serif text-3xl text-[#B4471F]">7</p></div>
+    <div class="border border-[#F0E6D2] p-4"><p class="text-xs text-[#1A1310]/60">Revenue today</p><p class="serif text-3xl">₹4.2L</p></div>
+  </div>
+
+  <div class="flex gap-2 mb-4 text-xs">
+    <input placeholder="Search order ID, customer, product…" class="flex-1 border border-[#1A1310]/20 px-3 py-2 bg-[#FAF6EF]">
+    <select class="border border-[#1A1310]/20 px-3 py-2 bg-[#FAF6EF]"><option>All statuses</option><option>Paid</option><option>Packed</option><option>Shipped</option><option>Delivered</option><option>Returned</option></select>
+    <select class="border border-[#1A1310]/20 px-3 py-2 bg-[#FAF6EF]"><option>All clusters</option></select>
+    <button class="border border-[#1A1310] px-4 py-2">Export CSV</button>
+  </div>
+
+  <div class="border border-[#F0E6D2]">
+    <table class="w-full text-sm">
+      <thead class="bg-[#F0E6D2]/40 text-xs uppercase tracking-wide text-[#1A1310]/60">
+        <tr><th class="p-3 text-left"><input type="checkbox"></th><th class="p-3 text-left">Order</th><th class="p-3 text-left">Customer</th><th class="p-3 text-left">Items</th><th class="p-3 text-left">Cluster</th><th class="p-3 text-right">Total</th><th class="p-3 text-left">Placed</th><th class="p-3 text-left">Status</th><th></th></tr>
+      </thead>
+      <tbody class="divide-y divide-[#F0E6D2]">
+        <tr><td class="p-3"><input type="checkbox"></td><td class="p-3 mono text-xs">#TT-20826-4471</td><td class="p-3">Priya Sharma<br><span class="text-xs text-[#1A1310]/60">Delhi</span></td><td class="p-3">2</td><td class="p-3 text-xs">Varanasi, Kashmir</td><td class="p-3 text-right serif">₹36,435</td><td class="p-3 text-xs text-[#1A1310]/60">8 Apr 14:22</td><td class="p-3"><span class="bg-[#E08821] text-[#1A1310] px-2 py-0.5 text-[10px]">PACKED</span></td><td class="p-3 text-xs"><button class="underline">Open</button></td></tr>
+        <tr><td class="p-3"><input type="checkbox"></td><td class="p-3 mono text-xs">#TT-20826-4470</td><td class="p-3">Arjun Mehta<br><span class="text-xs text-[#1A1310]/60">Mumbai</span></td><td class="p-3">1</td><td class="p-3 text-xs">Channapatna</td><td class="p-3 text-right serif">₹2,400</td><td class="p-3 text-xs text-[#1A1310]/60">8 Apr 13:08</td><td class="p-3"><span class="bg-[#5C6B3E] text-[#FAF6EF] px-2 py-0.5 text-[10px]">SHIPPED</span></td><td class="p-3 text-xs"><button class="underline">Open</button></td></tr>
+        <tr class="bg-[#B4471F]/5"><td class="p-3"><input type="checkbox"></td><td class="p-3 mono text-xs">#TT-20826-4469</td><td class="p-3">Ananya Iyer<br><span class="text-xs text-[#1A1310]/60">Bengaluru</span></td><td class="p-3">3</td><td class="p-3 text-xs">Kanchipuram, MP</td><td class="p-3 text-right serif">₹52,100</td><td class="p-3 text-xs text-[#1A1310]/60">8 Apr 12:51</td><td class="p-3"><span class="bg-[#B4471F] text-[#FAF6EF] px-2 py-0.5 text-[10px]">PAYMENT FAILED</span></td><td class="p-3 text-xs"><button class="underline">Action</button></td></tr>
+        <tr><td class="p-3"><input type="checkbox"></td><td class="p-3 mono text-xs">#TT-20826-4468</td><td class="p-3">Rohan Kapoor<br><span class="text-xs text-[#1A1310]/60">London, UK</span></td><td class="p-3">1</td><td class="p-3 text-xs">Kutch</td><td class="p-3 text-right serif">₹3,600</td><td class="p-3 text-xs text-[#1A1310]/60">8 Apr 11:34</td><td class="p-3"><span class="bg-[#5C6B3E] text-[#FAF6EF] px-2 py-0.5 text-[10px]">SHIPPED</span></td><td class="p-3 text-xs"><button class="underline">Open</button></td></tr>
+        <tr><td class="p-3"><input type="checkbox"></td><td class="p-3 mono text-xs">#TT-20826-4467</td><td class="p-3">Meera Nair<br><span class="text-xs text-[#1A1310]/60">Kochi</span></td><td class="p-3">2</td><td class="p-3 text-xs">Bidri, Bastar</td><td class="p-3 text-right serif">₹14,600</td><td class="p-3 text-xs text-[#1A1310]/60">8 Apr 10:22</td><td class="p-3"><span class="bg-[#1A1310]/15 px-2 py-0.5 text-[10px]">DELIVERED</span></td><td class="p-3 text-xs"><button class="underline">Open</button></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</body></html>

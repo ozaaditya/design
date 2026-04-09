@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traditiontag — Authentic GI Tagged Products of India</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Fraunces', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            ink: '#1A1310',
+            cream: '#FAF6EF',
+            sand: '#F0E6D2',
+            terracotta: '#B4471F',
+            saffron: '#E08821',
+            indigo: '#2C3E66',
+            moss: '#5C6B3E',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #FAF6EF; color: #1A1310; }
+    h1, h2, h3, .serif { font-family: 'Fraunces', serif; font-feature-settings: "ss01"; }
+    .placeholder-img { background: linear-gradient(135deg, #E8D9BE 0%, #C9B68A 100%); display:flex; align-items:center; justify-content:center; color:#7A6648; font-family:'Fraunces',serif; font-style:italic; background-size: cover; background-position: center; }
+    .placeholder-img span { background: rgba(250,246,239,0.0); }
+    .img-hero { background-image: url('https://loremflickr.com/900/1100/banarasi,saree,silk,handloom'); }
+    .img-handlooms { background-image: url('https://loremflickr.com/600/800/silk,saree,handloom,india'); }
+    .img-handicrafts { background-image: url('https://loremflickr.com/600/800/indian,handicraft,brass'); }
+    .img-spices { background-image: url('https://loremflickr.com/600/800/indian,temple,jewellery,gold'); }
+    .img-home { background-image: url('https://loremflickr.com/600/800/indian,pottery,blue'); }
+    .img-pashmina { background-image: url('https://loremflickr.com/600/600/pashmina,shawl,kashmir'); }
+    .img-toys { background-image: url('https://loremflickr.com/600/600/wooden,toys,colorful,handmade'); }
+    .img-painting { background-image: url('https://loremflickr.com/600/600/madhubani,painting,folk,art'); }
+    .img-bidri { background-image: url('https://loremflickr.com/600/600/bidri,vase,silver,inlay'); }
+    .img-ar { background-image: url('https://loremflickr.com/900/700/indian,living,room,interior'); }
+    .img-artisan { background-image: url('https://loremflickr.com/700/900/indian,weaver,artisan,loom'); }
+    .placeholder-img.has-image span { display: none; }
+    .gi-badge { background: #B4471F; color: #FAF6EF; font-size: 10px; letter-spacing: 0.1em; padding: 3px 8px; border-radius: 2px; font-weight: 600; }
+    .pattern-border { background-image: repeating-linear-gradient(90deg, #B4471F 0 8px, transparent 8px 16px); height: 3px; }
+  </style>
+</head>
+<body>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="bg-ink text-cream text-xs text-center py-2 tracking-wide">
+    Free shipping on orders above ₹2,500 · Authenticity guaranteed by GI registry · Ships worldwide
+  </div>
+
+  <!-- HEADER -->
+  <header class="border-b border-sand bg-cream sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="#" class="serif text-2xl font-semibold tracking-tight">
+          traditiontag<span class="text-terracotta">.</span>
+        </a>
+        <nav class="hidden md:flex gap-7 text-sm font-medium text-ink/80">
+          <a href="category.html?cat=handlooms" class="hover:text-terracotta">Handlooms</a>
+          <a href="category.html?cat=handicrafts" class="hover:text-terracotta">Handicrafts</a>
+          <a href="category.html?cat=jewellery" class="hover:text-terracotta">Jewellery</a>
+          <a href="category.html?cat=home" class="hover:text-terracotta">Home &amp; Living</a>
+          <a href="category.html?cat=region" class="hover:text-terracotta">By Region</a>
+          <a href="#" class="hover:text-terracotta">The GI Story</a>
+        </nav>
+      </div>
+      <div class="flex items-center gap-5 text-ink/80">
+        <a href="category.html" aria-label="Search" class="hover:text-terracotta"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
+        <a href="account-orders.html" aria-label="Account" class="hover:text-terracotta"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></a>
+        <a href="account-wishlist.html" aria-label="Wishlist" class="hover:text-terracotta"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a5.5 5.5 0 0 0-7.8 0L12 6.6l-1-1a5.5 5.5 0 1 0-7.8 7.8L12 22l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg></a>
+        <a href="cart.html" aria-label="Cart" class="relative hover:text-terracotta"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l-1.5 11a2 2 0 0 1-2 1.7H8.5a2 2 0 0 1-2-1.7L5 7z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg><span class="absolute -top-2 -right-2 bg-terracotta text-cream text-[10px] rounded-full w-4 h-4 flex items-center justify-center">2</span></a>
+      </div>
+    </div>
+    <div class="pattern-border"></div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="gi-badge">GOVERNMENT OF INDIA · GI REGISTERED</span>
+        <h1 class="serif text-5xl md:text-6xl font-medium leading-[1.05] mt-6 mb-6">
+          The soul of India,<br>
+          <span class="italic text-terracotta">crafted by its land.</span>
+        </h1>
+        <p class="text-ink/70 text-lg leading-relaxed max-w-md mb-8">
+          Every product carries a Geographical Indication tag — a guarantee of origin, tradition, and the hands that made it. From Banarasi silk to Bidri craft, see it in your home before you own it.
+        </p>
+        <div class="flex gap-4">
+          <a href="category.html" class="bg-ink text-cream px-7 py-3.5 text-sm font-medium tracking-wide hover:bg-terracotta transition">SHOP THE COLLECTION</a>
+        </div>
+        <div class="flex gap-8 mt-12 text-xs text-ink/60">
+          <div><div class="serif text-2xl text-ink">450+</div>GI registered products</div>
+          <div><div class="serif text-2xl text-ink">28</div>States represented</div>
+          <div><div class="serif text-2xl text-ink">100%</div>Authenticity verified</div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="placeholder-img has-image img-hero aspect-[4/5] rounded-sm"></div>
+        <div class="absolute -bottom-6 -left-6 bg-cream border border-sand p-4 shadow-lg max-w-[200px]">
+          <span class="gi-badge">GI #197</span>
+          <p class="serif text-sm mt-2 leading-tight">Banarasi Silk Saree</p>
+          <p class="text-xs text-ink/60 mt-1">Varanasi, Uttar Pradesh</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="border-y border-sand bg-sand/40">
+    <div class="max-w-7xl mx-auto px-6 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-xs">
+      <div><div class="serif text-base mb-1">⊛ GI Verified</div><div class="text-ink/60">Sourced from registered cluster artisans</div></div>
+      <div><div class="serif text-base mb-1">⌂ View in AR</div><div class="text-ink/60">Place objects in your room before buying</div></div>
+      <div><div class="serif text-base mb-1">✦ AI Visualizer</div><div class="text-ink/60">See how textiles fit your living space</div></div>
+      <div><div class="serif text-base mb-1">↻ Fair Trade</div><div class="text-ink/60">Direct payment to artisan collectives</div></div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <div class="flex items-end justify-between mb-10">
+      <div>
+        <p class="text-xs tracking-widest text-terracotta mb-2">EXPLORE BY CRAFT</p>
+        <h2 class="serif text-4xl">A nation of makers</h2>
+      </div>
+      <a href="#" class="text-sm underline underline-offset-4 hover:text-terracotta">View all categories →</a>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+      <a href="category.html?cat=handlooms" class="group">
+        <div class="placeholder-img has-image img-handlooms aspect-[3/4] mb-3"></div>
+        <h3 class="serif text-lg group-hover:text-terracotta">Handlooms</h3>
+        <p class="text-xs text-ink/60">Banarasi · Kanjivaram · Pashmina · 84 products</p>
+      </a>
+      <a href="category.html?cat=handicrafts" class="group">
+        <div class="placeholder-img has-image img-handicrafts aspect-[3/4] mb-3"></div>
+        <h3 class="serif text-lg group-hover:text-terracotta">Handicrafts</h3>
+        <p class="text-xs text-ink/60">Channapatna · Madhubani · Pattachitra · 126 products</p>
+      </a>
+      <a href="category.html?cat=jewellery" class="group">
+        <div class="placeholder-img has-image img-spices aspect-[3/4] mb-3"></div>
+        <h3 class="serif text-lg group-hover:text-terracotta">Jewellery</h3>
+        <p class="text-xs text-ink/60">Temple · Meenakari · Kundan · 54 products</p>
+      </a>
+      <a href="category.html?cat=home" class="group">
+        <div class="placeholder-img has-image img-home aspect-[3/4] mb-3"></div>
+        <h3 class="serif text-lg group-hover:text-terracotta">Home &amp; Living</h3>
+        <p class="text-xs text-ink/60">Bidri · Bastar Iron · Blue Pottery · 78 products</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="bg-sand/30 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-end justify-between mb-10">
+        <div>
+          <p class="text-xs tracking-widest text-terracotta mb-2">THIS SEASON</p>
+          <h2 class="serif text-4xl">Featured pieces</h2>
+        </div>
+        <div class="flex gap-2">
+          <button class="w-9 h-9 border border-ink/30 hover:bg-ink hover:text-cream">←</button>
+          <button class="w-9 h-9 border border-ink/30 hover:bg-ink hover:text-cream">→</button>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Product card x4 -->
+        <a href="product-detail.html" class="group">
+          <div class="relative">
+            <div class="placeholder-img has-image img-pashmina aspect-square mb-3"></div>
+            <span class="absolute top-3 left-3 gi-badge">GI #46</span>
+            <button class="absolute top-3 right-3 w-9 h-9 bg-cream rounded-full flex items-center justify-center text-ink/60 hover:text-terracotta">♡</button>
+            <div class="absolute bottom-3 right-3 bg-ink/80 text-cream text-[10px] px-2 py-1 backdrop-blur">⌂ AR</div>
+          </div>
+          <p class="text-[11px] tracking-widest text-ink/50 uppercase">Kashmir</p>
+          <h3 class="serif text-lg mt-1">Hand-woven Pashmina Shawl</h3>
+          <p class="text-sm mt-1">₹18,500 <span class="text-ink/40 line-through text-xs ml-1">₹22,000</span></p>
+        </a>
+        <a href="product-detail.html" class="group">
+          <div class="relative">
+            <div class="placeholder-img has-image img-toys aspect-square mb-3"></div>
+            <span class="absolute top-3 left-3 gi-badge">GI #21</span>
+            <button class="absolute top-3 right-3 w-9 h-9 bg-cream rounded-full flex items-center justify-center text-ink/60 hover:text-terracotta">♡</button>
+            <div class="absolute bottom-3 right-3 bg-ink/80 text-cream text-[10px] px-2 py-1 backdrop-blur">⌂ AR</div>
+          </div>
+          <p class="text-[11px] tracking-widest text-ink/50 uppercase">Karnataka</p>
+          <h3 class="serif text-lg mt-1">Channapatna Wooden Toy Set</h3>
+          <p class="text-sm mt-1">₹2,400</p>
+        </a>
+        <a href="product-detail.html" class="group">
+          <div class="relative">
+            <div class="placeholder-img has-image img-painting aspect-square mb-3"></div>
+            <span class="absolute top-3 left-3 gi-badge">GI #80</span>
+            <button class="absolute top-3 right-3 w-9 h-9 bg-cream rounded-full flex items-center justify-center text-ink/60 hover:text-terracotta">♡</button>
+            <div class="absolute bottom-3 right-3 bg-ink/80 text-cream text-[10px] px-2 py-1 backdrop-blur">✦ AI</div>
+          </div>
+          <p class="text-[11px] tracking-widest text-ink/50 uppercase">Bihar</p>
+          <h3 class="serif text-lg mt-1">Madhubani Folk Painting</h3>
+          <p class="text-sm mt-1">₹6,800</p>
+        </a>
+        <a href="product-detail.html" class="group">
+          <div class="relative">
+            <div class="placeholder-img has-image img-bidri aspect-square mb-3"></div>
+            <span class="absolute top-3 left-3 gi-badge">GI #16</span>
+            <button class="absolute top-3 right-3 w-9 h-9 bg-cream rounded-full flex items-center justify-center text-ink/60 hover:text-terracotta">♡</button>
+            <div class="absolute bottom-3 right-3 bg-ink/80 text-cream text-[10px] px-2 py-1 backdrop-blur">⌂ AR</div>
+          </div>
+          <p class="text-[11px] tracking-widest text-ink/50 uppercase">Telangana</p>
+          <h3 class="serif text-lg mt-1">Bidriware Silver-Inlay Vase</h3>
+          <p class="text-sm mt-1">₹9,200</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AR / VISUALIZER FEATURE -->
+  <section class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
+    <div class="placeholder-img has-image img-ar aspect-[4/3]"></div>
+    <div>
+      <p class="text-xs tracking-widest text-terracotta mb-2">SEE BEFORE YOU OWN</p>
+      <h2 class="serif text-4xl mb-6">Heritage, in your room.</h2>
+      <p class="text-ink/70 leading-relaxed mb-6">
+        Point your phone at any wall, table, or floor — and place an authentic GI-tagged piece into your space. Our AI visualizer can also drape a Banarasi over your sofa, or hang a Madhubani in your hallway, before you commit.
+      </p>
+      <ul class="space-y-3 text-sm">
+        <li class="flex gap-3"><span class="text-terracotta">⌂</span> Native AR on iOS &amp; Android — no app install</li>
+        <li class="flex gap-3"><span class="text-terracotta">✦</span> AI room renders in under 30 seconds</li>
+        <li class="flex gap-3"><span class="text-terracotta">⊛</span> True-to-scale, true-to-color from artisan-supplied scans</li>
+      </ul>
+      <a href="#" class="inline-block mt-8 border-b border-ink pb-1 text-sm font-medium hover:text-terracotta hover:border-terracotta">Try the visualizer →</a>
+    </div>
+  </section>
+
+  <!-- REGION MAP -->
+  <section class="bg-ink text-cream py-24">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-xs tracking-widest text-saffron mb-3">FROM 28 STATES</p>
+      <h2 class="serif text-4xl mb-4">Every region. Every story.</h2>
+      <p class="text-cream/70 max-w-xl mx-auto mb-12">Explore handpicked products by the land that birthed them — from the looms of Varanasi to the toy workshops of Channapatna.</p>
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-3 text-sm">
+        <a href="#" class="border border-cream/20 py-4 hover:bg-cream hover:text-ink transition">Kashmir</a>
+        <a href="#" class="border border-cream/20 py-4 hover:bg-cream hover:text-ink transition">Uttar Pradesh</a>
+        <a href="#" class="border border-cream/20 py-4 hover:bg-cream hover:text-ink transition">West Bengal</a>
+        <a href="#" class="border border-cream/20 py-4 hover:bg-cream hover:text-ink transition">Tamil Nadu</a>
+        <a href="#" class="border border-cream/20 py-4 hover:bg-cream hover:text-ink transition">Karnataka</a>
+        <a href="#" class="border border-cream/20 py-4 hover:bg-cream hover:text-ink transition">Rajasthan</a>
+        <a href="#" class="border border-cream/20 py-4 hover:bg-cream hover:text-ink transition">Odisha</a>
+        <a href="#" class="border border-cream/20 py-4 hover:bg-cream hover:text-ink transition">Gujarat</a>
+        <a href="#" class="border border-cream/20 py-4 hover:bg-cream hover:text-ink transition">Kerala</a>
+        <a href="#" class="border border-cream/20 py-4 hover:bg-cream hover:text-ink transition">Telangana</a>
+        <a href="#" class="border border-cream/20 py-4 hover:bg-cream hover:text-ink transition">Bihar</a>
+        <a href="#" class="border border-cream/20 py-4 hover:bg-cream hover:text-ink transition">All states →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTISAN STORY -->
+  <section class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-5 gap-12 items-center">
+    <div class="md:col-span-2 placeholder-img has-image img-artisan aspect-[4/5]"></div>
+    <div class="md:col-span-3">
+      <p class="text-xs tracking-widest text-terracotta mb-2">MEET THE MAKERS</p>
+      <h2 class="serif text-4xl mb-6">Rashida Bibi, weaver of Varanasi</h2>
+      <p class="text-ink/70 leading-relaxed text-lg italic serif mb-6">
+        "My grandmother taught me this loom. The motifs in our silk have been passed down for six generations. When you buy this saree, you carry our family with you."
+      </p>
+      <p class="text-ink/60 mb-6">Every Traditiontag purchase pays the artisan cluster directly. We publish the per-piece artisan share on every product page.</p>
+      <a href="#" class="text-sm underline underline-offset-4 hover:text-terracotta">Read more artisan stories →</a>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="bg-sand/50 py-20">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="serif text-3xl mb-3">Letters from the loom</h2>
+      <p class="text-ink/70 mb-6">New crafts, artisan stories, and early access to limited collections. Once a month. No noise.</p>
+      <form class="flex gap-2 max-w-md mx-auto">
+        <input type="email" placeholder="your@email.com" class="flex-1 px-4 py-3 border border-ink/20 bg-cream focus:outline-none focus:border-ink">
+        <button class="bg-ink text-cream px-6 py-3 text-sm tracking-wide hover:bg-terracotta">SUBSCRIBE</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-ink text-cream/80 py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-5 gap-10 text-sm">
+      <div class="md:col-span-2">
+        <a href="#" class="serif text-2xl text-cream">traditiontag<span class="text-terracotta">.</span></a>
+        <p class="mt-4 text-cream/60 max-w-xs">India's GI tagged crafts, brought into your home through AR &amp; AI. Authenticity guaranteed by the Geographical Indications Registry of India.</p>
+      </div>
+      <div>
+        <h4 class="serif text-cream mb-4">Shop</h4>
+        <ul class="space-y-2 text-cream/60">
+          <li>Handlooms</li><li>Handicrafts</li><li>Jewellery</li><li>Home &amp; Living</li><li>By Region</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="serif text-cream mb-4">Learn</h4>
+        <ul class="space-y-2 text-cream/60">
+          <li>The GI story</li><li>Artisan clusters</li><li>How AR works</li><li>Authenticity</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="serif text-cream mb-4">Support</h4>
+        <ul class="space-y-2 text-cream/60">
+          <li>Shipping</li><li>Returns</li><li>Contact</li><li>FAQ</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-cream/10 text-xs text-cream/40 flex justify-between">
+      <span>© 2026 Traditiontag · Authorised distributor of GI-tagged products</span>
+      <span>Made in India 🇮🇳</span>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=375, initial-scale=1.0">
+<title>Profile — Mobile — Traditiontag</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif;background:#E0D6C8;margin:0;display:flex;justify-content:center;padding:40px 0;}
+.phone{width:375px;min-height:812px;background:#FAF6EF;color:#1A1310;border-radius:40px;overflow:hidden;box-shadow:0 25px 60px rgba(0,0,0,.25);position:relative;border:8px solid #1A1310;}
+.serif{font-family:'Fraunces',serif;}
+.img{background-size:cover;background-position:center;background-color:#E8D9BE;}
+.tab-bar{position:sticky;bottom:0;background:#FAF6EF;border-top:1px solid #F0E6D2;display:flex;justify-content:space-around;padding:10px 0 28px;z-index:50;}
+.tab{text-align:center;font-size:9px;color:#1A1310;opacity:.5;text-decoration:none;}
+.tab.active{opacity:1;color:#B4471F;}
+.tab svg{display:block;margin:0 auto 2px;width:22px;height:22px;}
+.row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid #F0E6D2;}
+.row-label{font-size:13px;}
+.row-chevron{color:#1A1310;opacity:.3;font-size:14px;}
+</style>
+</head>
+<body>
+
+<div class="phone">
+  <div class="flex justify-between items-center px-6 pt-4 pb-2 text-[10px] text-[#1A1310]/60"><span>9:41</span><div class="flex gap-1"><span>📶</span><span>🔋</span></div></div>
+
+  <div class="px-5 pb-5">
+    <!-- Profile header -->
+    <div class="flex items-center gap-4 mb-6">
+      <div class="w-16 h-16 rounded-full bg-[#B4471F] flex items-center justify-center text-[#FAF6EF] serif text-xl">PS</div>
+      <div>
+        <h1 class="serif text-xl">Priya Sharma</h1>
+        <p class="text-xs text-[#1A1310]/60">priya@example.com</p>
+        <p class="text-[10px] text-[#1A1310]/60">Member since Feb 2026</p>
+      </div>
+    </div>
+
+    <!-- Quick stats -->
+    <div class="grid grid-cols-3 gap-2 mb-6">
+      <div class="bg-[#F0E6D2]/30 border border-[#F0E6D2] rounded-lg py-3 text-center">
+        <p class="serif text-lg">3</p><p class="text-[9px] text-[#1A1310]/60">Orders</p>
+      </div>
+      <div class="bg-[#F0E6D2]/30 border border-[#F0E6D2] rounded-lg py-3 text-center">
+        <p class="serif text-lg">6</p><p class="text-[9px] text-[#1A1310]/60">Wishlist</p>
+      </div>
+      <div class="bg-[#F0E6D2]/30 border border-[#F0E6D2] rounded-lg py-3 text-center">
+        <p class="serif text-lg">4</p><p class="text-[9px] text-[#1A1310]/60">AR Sessions</p>
+      </div>
+    </div>
+
+    <!-- Menu sections -->
+    <p class="text-[10px] uppercase tracking-widest text-[#B4471F] mb-1">COLLECTIONS</p>
+    <div class="row"><span class="row-label">♡ Wishlist</span><span class="row-chevron">›</span></div>
+    <div class="row"><span class="row-label">⌂ AR Sessions</span><span class="row-chevron">›</span></div>
+    <div class="row"><span class="row-label">✦ AI Room Renders</span><span class="row-chevron">›</span></div>
+
+    <p class="text-[10px] uppercase tracking-widest text-[#B4471F] mt-5 mb-1">ACCOUNT</p>
+    <div class="row"><span class="row-label">Personal details</span><span class="row-chevron">›</span></div>
+    <div class="row"><span class="row-label">Saved addresses</span><span class="row-chevron">›</span></div>
+    <div class="row"><span class="row-label">Payment methods</span><span class="row-chevron">›</span></div>
+    <div class="row"><span class="row-label">Notifications</span><span class="row-chevron">›</span></div>
+
+    <p class="text-[10px] uppercase tracking-widest text-[#B4471F] mt-5 mb-1">SUPPORT</p>
+    <div class="row"><span class="row-label">Help centre</span><span class="row-chevron">›</span></div>
+    <div class="row"><span class="row-label">Returns &amp; refunds</span><span class="row-chevron">›</span></div>
+    <div class="row"><span class="row-label">About Traditiontag</span><span class="row-chevron">›</span></div>
+
+    <button class="w-full border border-[#B4471F]/30 text-[#B4471F] py-3 mt-6 text-sm rounded-lg mb-3">Sign out</button>
+    <p class="text-[9px] text-[#1A1310]/40 text-center mb-4">App v1.0.0 · traditiontag.in</p>
+  </div>
+
+  <div style="height:70px;"></div>
+  <div class="tab-bar">
+    <a href="home.html" class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/></svg>Home</a>
+    <a href="catalog.html" class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Shop</a>
+    <a href="ar-viewer.html" class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><path d="M3 9h2M19 9h2M3 15h2M19 15h2"/></svg>AR</a>
+    <a href="orders.html" class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 7h14l-1.5 11a2 2 0 0 1-2 1.7H8.5a2 2 0 0 1-2-1.7L5 7z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg>Orders</a>
+    <a href="profile.html" class="tab active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>Profile</a>
+  </div>
+</div>
+
+</body></html>
